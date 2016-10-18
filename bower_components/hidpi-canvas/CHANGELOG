@@ -1,0 +1,35 @@
+= 1.0.10
+  * Fixed iOS 10 API deprication (#17)
+  * Add Travis CI
+  * Include minified build in release
+
+= 1.0.9
+  * True fix for issue with lineWidth handling in stroke (#14)
+
+= 1.0.8 (broken)
+  * Fix issue with lineWidth handling in stroke (#14)
+
+= 1.0.7
+  * Better fix for pixel ratio being 1
+
+= 1.0.6
+  * Performance improvement, early bail if pixel ratio is 1 (#13)
+
+= 1.0.5
+  * Correct bower file with "main" entry
+  * Add `createLinearGradient` support
+
+= 1.0.3
+  * Add bower support
+  * Add built distribution files to the repository
+
+= 1.0.2
+  * Fix bug with font scaling with multiple text calls (Issue #4)
+  * Add a few tests
+
+= 1.0.1
+  * Fixed Bug detecting the webkit backingStore
+  * General code cleanup
+
+= 1.0.0
+  * Initial Release

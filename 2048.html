@@ -1,35 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>2048游戏</title>
+	<meta charset="UTF-8">
+	<title>2048游戏</title>
 </head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale = 1, minimum-scale = 1, user-scalable = no">
 <link rel="stylesheet" href="./2048.css">
 <body>
-    <div class="wrap">
-        <p id = "scoretext">Score:<span id = "score">0</span></p>
-        <button id = "newgame">new Game</button>
-        <canvas id ="canvas"></canvas>
+	<div class="wrap">
+      <h1>2048</h1>
+      <div class="text">
+        <p id = "scoretext">score:<span id = "score">0</span></p>
+        <button id = "newgame">begin</button>
+      </div>
+   
+       <canvas id ="canvas"></canvas>
     </div>
-    
-    
-    <div id="color"></div>
-    <script src = "../bower_components/hidpi-canvas/dist/hidpi-canvas.js"></script>
+	<script src = "./bower_components/hidpi-canvas/dist/hidpi-canvas.js"></script>
     <script>
         var getPixelRatio = function(context) {
-                var backingStore = context.backingStorePixelRatio ||
-                      context.webkitBackingStorePixelRatio ||
-                      context.mozBackingStorePixelRatio ||
-                      context.msBackingStorePixelRatio ||
-                      context.oBackingStorePixelRatio ||
-                      context.backingStorePixelRatio || 1;
+        var backingStore = context.backingStorePixelRatio ||
+              context.webkitBackingStorePixelRatio ||
+              context.mozBackingStorePixelRatio ||
+              context.msBackingStorePixelRatio ||
+              context.oBackingStorePixelRatio ||
+              context.backingStorePixelRatio || 1;
 
-                return (window.devicePixelRatio || 1) / backingStore;
-        };
+        return (window.devicePixelRatio || 1) / backingStore;
+    };
     </script>
     <script src = "./Rect.js"></script>
-    <script src = "./2048.js"></script>
-
+<!--     <script src = "./2048.js"></script> -->
 </body>
 </html>
