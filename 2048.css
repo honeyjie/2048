@@ -42,7 +42,7 @@
     	right: 0;
     	font-size: 3rem;
     }
-    .wrap {
+    #wrap {
 		position: relative;
 		height: 100%;
 		width: 100%;
@@ -55,12 +55,13 @@
   		width: 100%;
 		font-family: Imprint MT Shadow;
   		text-align: center;
-  		font-size: 5rem;
+  		font-size: 3rem;
   		margin: 5% 0;
   	}
 	#canvas {
 		position: absolute;
 		margin-top: 0rem;
+        left: 50%;
 	}
 	.text {
 		position: relative;
@@ -70,7 +71,7 @@
 	}
 	p {
 		float: left;
-		margin-left: 10%;
+/*		margin-left: 10%;*/
 		font-size: 2rem;
 		font-weight: bold;
 		margin-top: 2rem;
@@ -78,7 +79,7 @@
 	}
 	#newgame {
 		border: none;
-		margin-right: 10%;
+/*		margin-right: 10%;*/
 		margin-top: 2rem;
 		padding: 0.5rem 0.8rem;
 		float: right;
