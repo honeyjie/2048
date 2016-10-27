@@ -6,6 +6,7 @@
 </head>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale = 1, minimum-scale = 1, user-scalable = no">
 <link rel="stylesheet" href="./2048.css">
+
 <!--[if lt IE 9]> 
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> 
 <![endif]-->
@@ -20,6 +21,14 @@
    
        <canvas id ="canvas"></canvas>
     </div>
+  <script>
+  function initPage() {
+      var w = document.documentElement.clientWidth;
+      document.documentElement.style.fontSize = w/320*10 + "px";
+  }
+  document.addEventListener("DOMContentLoaded", initPage, false);
+  window.onresize = initPage;
+</script>
 	<script src = "./bower_components/hidpi-canvas/dist/hidpi-canvas.js"></script>
     <script>
         var getPixelRatio = function(context) {
@@ -33,6 +42,7 @@
         return (window.devicePixelRatio || 1) / backingStore;
     };
     </script>
+
     <script src = "./Rect.js"></script>
 </body>
 </html>
